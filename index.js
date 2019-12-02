@@ -5,7 +5,7 @@ const without = require('./without');
 const takeUntil = require('./takeUntil');
 const map = require('./map');
 const flatten = require('./flatten');
-const indKeyByValue = require('./indKeyByValue');
+const findKeyByValue = require('./findKeyByValue');
 const findKey = require('./findKey');
 const eqObjects = require('./eqObjects');
 const eqArrays = require('./eqArrays');
@@ -23,7 +23,7 @@ module.exports = {
   takeUntil,
   map,
   flatten,
-  indKeyByValue,
+  findKeyByValue,
   findKey,
   eqObjects,
   eqArrays,
