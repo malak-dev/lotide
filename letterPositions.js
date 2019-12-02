@@ -17,22 +17,15 @@ const eqArrays = function (arr1, arr2) {
 
 const letterPositions = function (sentence) {
   var str2 = sentence.split(' ').join('');
+  console.log(str2);
   let results = {};
-  let arr = [];
-  for (let count of str2) {
-    if (results[count]) {
-      results[count] += 1;
-    } else {
-      results[count] = 1;
-    } 
-  } for (let i = 0; i < results.length; i++) {
-    if (Object.results[i]) {
-      arr = arr.push(i);
-      console.log(arr);
-    } return arr;
-  }
+  for (let i = 0; i < str2.length; i++) {
+    if (str2[i] in results) {
+      results[str2[i]].push(i);
+    } else { results[str2[i]] = [i]; }
+  } return results;
 };
-
+module.exports = letterPositions;
 console.log(letterPositions("lighthouse in the house"));
 //sassertArraysEqual(letterPositions("lighthouse in the house"), [1]);
 //assertArraysEqual(["1", "2", "3"], ["B", "2", "3"]);
