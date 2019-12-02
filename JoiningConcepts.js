@@ -14,11 +14,12 @@
 
 // Test / Driver Code below... 
 
-const joinList = function (conceptList){
-  const concepts = [ ];
-  for ( var i = 0; i < conceptList.length ; i++) {
-    concepts += conceptList[i] +",";
-  }console.log(concepts);
+const joinList = function (conceptList) {
+  const concepts = [];
+  for (var i = 0; i < conceptList.length; i++) {
+    concepts += conceptList[i] + ",";
+  } console.log(concepts);
 };
+module.exports = joinList;
 const conceptList = ["gists", "types", "operators", "iteration", "problem solving"];
 joinList(conceptList);
