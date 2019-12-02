@@ -27,6 +27,7 @@ const flatten = function (array) {
   }
   return resArray;
 };
+module.exports = flatten;
 
 
 

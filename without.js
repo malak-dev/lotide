@@ -16,7 +16,7 @@ const without = function (src, itemToR) {
   const result = src.filter(word => !itemToR.includes(word));
   console.log(result);
 };
-
+module.exports = without;
 const words = ["hello", "world", "lighthouse"];
 without(["hello", "world", "lighthouse"], ["lighthouse"]);
 without([1, 2, 3], [1]);

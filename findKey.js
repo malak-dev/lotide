@@ -15,7 +15,7 @@ const findKey = function (obj, val) {
   }
 
 };
-
+module.exports = findKey;
 const m = "noma";
 assertEqual(findKey({
   "Blue Hill": { stars: 1 },

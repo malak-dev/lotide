@@ -14,8 +14,6 @@ const findKeyByValue = function (obj, val) {
       return mov;
     }
   }
-
-
 };
 
 const bestTVShowsByGenre = {
@@ -23,6 +21,7 @@ const bestTVShowsByGenre = {
   comedy: "Brooklyn Nine-Nine",
   drama: "The Wire"
 };
+module.exports = indKeyByValue;
 console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);

@@ -20,7 +20,7 @@ const countLetters = function (str) {
   return result;
 
 };
-
+module.exports = countLetters;
 
 console.log(countLetters("lighthouse in the house"));
 
