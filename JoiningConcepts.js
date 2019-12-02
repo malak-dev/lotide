@@ -15,9 +15,9 @@
 // Test / Driver Code below... 
 
 const joinList = function (conceptList) {
-  const concepts = [];
+  let concepts = [];
   for (var i = 0; i < conceptList.length; i++) {
-    concepts += conceptList[i] + ",";
+    concepts = conceptList[i] + ",";
   } console.log(concepts);
 };
 module.exports = joinList;

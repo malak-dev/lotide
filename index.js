@@ -15,7 +15,7 @@ const assertObjectsEqual = require('./assertObjectsEqual');
 const assertEqual = require('./assertEqual');
 const assertArraysEqual = require('./assertArraysEqual');
 const letterPositions = require('./letterPositions');
-const joinList = require('./joinList');
+const joinList = require('./joiningConcepts');
 
 module.exports = {
   head,
